@@ -1,0 +1,62 @@
+[
+	{
+		"id": 1,
+		"name": "Booki",
+		"description": "Booki est un site Internet qui permette aux usagers de trouver des hébergements et des activités dans la ville de leur choix.",
+		"url": "https://mazurjerome.github.io/Projet-2/",
+		"technologies": ["Html", "CSS", "GitHub", "Git"],
+		"date": "2022-09"
+	},
+	{
+		"id": 2,
+		"name": "Ohmyfood",
+		"description": "Ohmyfood! est une jeune startup sur le marché de la restauration. j'y ai développé un site 100% mobile qui répertorie les menus de restaurants gastronomiques.",
+		"url": "https://mazurjerome.github.io/Projet-3/",
+		"technologies": ["Html", "CSS", "Sass", "GitHub", "Git"],
+		"date": "2022-10"
+	},
+	{
+		"id": 3,
+		"name": "La Panthère",
+		"description": "La Panthère une grande agence de web design basée à Lyon. J'ai effectuer les presations suivantes : Analyse de l’état actuel de SEO du site fourni, Amélioration du SEO du site, Comparaison des résultats",
+		"image": "../assets/images/la-panthere.png",
+		"url": "https://mazurjerome.github.io/projet-4/",
+		"technologies": ["rapport d’analyse SEO", "rapport d’optimisation"],
+		"date": "2022-11"
+	},
+	{
+		"id": 4,
+		"name": "Kanap",
+		"description": "Kanap est une entreprise de location de meubles. J'ai effectuer l’implémentation du site de Kanap de manière dynamique. Voici les différentes tâches que j'ai mener à bien : Unifier les travaux déjà réalisés par l’équipe en intégrant dynamiquement les éléments de l’API dans les différentes pages web avec JavaScript, mettre en place un plan de test d’acceptation",
+		"image": "../assets/images/kanap.png",
+		"url": "https://mazurjerome.github.io/projet-5/",
+		"technologies": ["javascript", "API", "GitHub", "Git"],
+		"date": "2022-12"
+	},
+	{
+		"id": 5,
+		"name": "Piiquante",
+		"description": "Piiquante est une entreprise de sauces piquantes. J'ai construis une API sécurisée pour l'application d'avis gastronomiques",
+		"url": "https://mazurjerome.github.io/projet-6/",
+		"technologies": [
+			"javascript",
+			"API",
+			"API REST",
+			"Nodee.js",
+			"Express",
+			"mongoBD",
+			"GitHub",
+			"Git"
+		],
+		"date": "2023-01"
+	},
+	{
+		"id": 6,
+		"name": "Kasa",
+		"description": "Kasa est une entreprise de location d’appartements entre particuliers. J'ai développé le front-end en React.",
+		"image": "../assets/images/kasa.png",
+		"url": "https://mazurjerome.github.io/Projet-7/",
+		"technologies": ["javascript", "React", "GitHub", "Git"],
+		"date": "2023-01"
+	}
+]
