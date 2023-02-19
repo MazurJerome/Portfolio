@@ -1,6 +1,6 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import "../style/CV.css";
+import "../styles/CV.css";
 
 function CV() {
 	return (

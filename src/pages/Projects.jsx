@@ -1,7 +1,7 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Bank from "../BDD/bank.json";
-import "../style/Projects.css";
+import "../styles/Projects.css";
 
 function Projects() {
 	const BDD = Bank;
@@ -31,7 +31,7 @@ function Projects() {
 									alt={element.name}
 									key={`img ${element.id} ${index}`}
 								/>
-								<p>{element.date}</p>
+								<p className="illustDate">{element.date}</p>
 							</div>
 						</div>
 					))}

@@ -1,7 +1,7 @@
 import Header from "../components/Header.jsx";
 import Footer from "../components/Footer";
 import { NavLink } from "react-router-dom";
-import "../style/Error.css";
+import "../styles/Error.css";
 
 function Error() {
 	return (

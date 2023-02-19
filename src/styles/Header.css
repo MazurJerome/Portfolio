@@ -1,0 +1,99 @@
+header {
+	width: 98%;
+	min-width: 345px;
+	height: 68px;
+	padding: 0;
+	display: flex;
+	justify-content: flex-end;
+}
+nav {
+	width: 30%;
+	min-width: 215px;
+	height: 50%;
+	display: flex;
+	margin-top: 17px;
+	justify-content: space-between;
+	font-family: "Montserrat";
+	font-size: 24px;
+}
+.navCenter {
+	width: 30%;
+	min-width: 215px;
+	height: 250px;
+	opacity: 0.5;
+	display: flex;
+	flex-wrap: wrap;
+}
+.navbar {
+	width: 38%;
+	height: 80px;
+	margin: 3%;
+	border: 2px solid #57e6fc;
+	border-radius: 20px;
+	text-decoration: none;
+	color: whitesmoke;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.navbar:hover {
+	opacity: 1;
+	width: 40%;
+	height: 85px;
+	font-weight: bold;
+	color: white;
+	text-decoration-line: underline;
+	text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
+		0.025em 0.04em 0 #fffc00;
+	box-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
+		0.025em 0.04em 0 #fffc00;
+	animation: glitch 500ms infinite;
+}
+@media (max-width: 600px) {
+	header {
+		width: 86%;
+		height: 68px;
+		padding: 0;
+		margin: 3%;
+		display: flex;
+		justify-content: space-between;
+	}
+	.App-logo-head {
+		width: 40%;
+		margin-right: 10px;
+	}
+	nav {
+		font-size: 18px;
+	}
+}
+
+@keyframes glitch {
+	0% {
+		text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
+			0.025em 0.04em 0 #fffc00;
+	}
+	15% {
+		text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
+			0.025em 0.04em 0 #fffc00;
+	}
+	16% {
+		text-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.035em 0 #fc00ff,
+			-0.05em -0.05em 0 #fffc00;
+	}
+	49% {
+		text-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.035em 0 #fc00ff,
+			-0.05em -0.05em 0 #fffc00;
+	}
+	50% {
+		text-shadow: 0.05em 0.035em 0 #00fffc, 0.03em 0 0 #fc00ff,
+			0 -0.04em 0 #fffc00;
+	}
+	99% {
+		text-shadow: 0.05em 0.035em 0 #00fffc, 0.03em 0 0 #fc00ff,
+			0 -0.04em 0 #fffc00;
+	}
+	100% {
+		text-shadow: -0.05em 0 0 #00fffc, -0.025em -0.04em 0 #fc00ff,
+			-0.04em -0.025em 0 #fffc00;
+	}
+}
