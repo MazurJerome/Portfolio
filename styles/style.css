@@ -106,6 +106,14 @@ a:hover::after {
   transition-delay: 0.65s;
 }
 
+.appear {
+  opacity: 0;
+}
+
+.appear.is-inview {
+  opacity: 1;
+}
+
 /*
 paramettres par ordre
 */
