@@ -101,17 +101,33 @@ a:hover::after {
   height: 2px;
   margin: 0 auto;
   background: #000101;
-  transition: 1s cubic-bezier(0.77, 0, 0.18, 1);
-  transform-origin: left;
-  transition-delay: 0.65s;
+  transition: 0.75s cubic-bezier(0.77, 0, 0.18, 1);
+  transition-delay: 0.25s;
+  opacity: 0;
+  transform: scaleX(0);
+}
+
+.line_wrapper.is-inview .line {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+.wrapper {
+  perspective: 900px;
 }
 
 .appear {
   opacity: 0;
+  transform: translateY(100%) rotateX(-80deg);
+  transform-origin: top center;
+  transform-style: preserve-3d;
+  transition: 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .appear.is-inview {
+  transition-delay: 0.7s;
   opacity: 1;
+  transform: none;
 }
 
 /*
@@ -128,18 +144,30 @@ header {
   justify-content: space-between;
 }
 
+#h1_wrapper {
+  transition-delay: 0.3s;
+}
+
 h1 {
-  font-size: calc(2rem + 8vw);
-  margin-top: 70px;
+  font-size: calc(2rem + 7vw);
+  margin-top: 60px;
   font-family: "font-bold", sans-serif;
   letter-spacing: 6px;
   color: #fefeff;
 }
 
 header h2 {
-  font-size: calc(1rem + 6.5vw);
+  font-size: calc(1rem + 5.5vw);
   margin: 18px 0;
   text-align: left;
+}
+
+#h2_1 {
+  transition-delay: 0.9;
+}
+
+#h2_2 {
+  transition-delay: 1.2s;
 }
 
 .scroll_wrap {
@@ -163,6 +191,11 @@ header h2 {
   font-size: calc(1rem + 1vw);
   letter-spacing: 1px;
 }
+.about .linkAPropos {
+  padding: 2px;
+  color: #fefeff;
+  background-color: #000101;
+}
 .about .img1 {
   background: url(../assets/img/img1.jpg) top/cover;
 }
@@ -182,6 +215,7 @@ header h2 {
 }
 .skills .appear {
   text-align: center;
+  transition-delay: 0.6s;
 }
 .skills p {
   font-size: calc(1rem + 6vw);
@@ -238,6 +272,19 @@ header h2 {
   margin-top: 1.5vw;
   color: #fefeff;
 }
+.portfolio .project::before {
+  content: "";
+  position: absolute;
+  height: 110%;
+  width: 100%;
+  top: -3px;
+  background: #fefeff;
+  transition: width 1s ease-out;
+  transition-delay: 0.85s;
+}
+.portfolio .project.is-inview::before {
+  width: 0;
+}
 
 footer {
   margin: 150px 0 120px 0;
@@ -246,6 +293,12 @@ footer p {
   font-size: calc(1rem + 2vw);
   margin: 25px 0;
   text-align: center;
+}
+footer #foot2 {
+  transition-delay: 1.2s;
+}
+footer #foot3 {
+  transition-delay: 1.6s;
 }
 footer a {
   font-family: "font-bold", sans-serif;

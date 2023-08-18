@@ -85,15 +85,29 @@ a:hover::after {
 	height: 2px;
 	margin: 0 auto;
 	background: #000101;
-	transition: 1s cubic-bezier(0.77, 0, 0.18, 1);
-	transform-origin: left;
-	transition-delay: 0.65s;
+	transition: 0.75s cubic-bezier(0.77, 0, 0.18, 1);
+	transition-delay: 0.25s;
+	opacity: 0;
+	transform: scaleX(0);
+}
+.line_wrapper.is-inview .line {
+	opacity: 1;
+	transform: scaleX(1);
+}
+.wrapper {
+	perspective: 900px;
 }
 .appear {
 	opacity: 0;
+	transform: translateY(100%) rotateX(-80deg);
+	transform-origin: top center;
+	transform-style: preserve-3d;
+	transition: 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 .appear.is-inview {
+	transition-delay: 0.7s;
 	opacity: 1;
+	transform: none;
 }
 
 /*
@@ -109,17 +123,26 @@ header {
 	display: flex;
 	justify-content: space-between;
 }
+#h1_wrapper {
+	transition-delay: 0.3s;
+}
 h1 {
-	font-size: calc(2rem + 8vw);
-	margin-top: 70px;
+	font-size: calc(2rem + 7vw);
+	margin-top: 60px;
 	font-family: "font-bold", sans-serif;
 	letter-spacing: 6px;
 	color: #fefeff;
 }
 header h2 {
-	font-size: calc(1rem + 6.5vw);
+	font-size: calc(1rem + 5.5vw);
 	margin: 18px 0;
 	text-align: left;
+}
+#h2_1 {
+	transition-delay: 0.9;
+}
+#h2_2 {
+	transition-delay: 1.2s;
 }
 .scroll_wrap {
 	position: absolute;
@@ -141,7 +164,11 @@ header h2 {
 		font-size: calc(1rem + 1vw);
 		letter-spacing: 1px;
 	}
-
+	.linkAPropos {
+		padding: 2px;
+		color: #fefeff;
+		background-color: #000101;
+	}
 	.img1 {
 		background: url(../assets/img/img1.jpg) top/cover;
 	}
@@ -161,6 +188,7 @@ header h2 {
 	}
 	.appear {
 		text-align: center;
+		transition-delay: 0.6s;
 	}
 	p {
 		font-size: calc(1rem + 6vw);
@@ -197,6 +225,7 @@ header h2 {
 			transform: translate(0, -50%);
 		}
 	}
+
 	#p2 {
 		margin: 0 6vh 0 auto;
 	}
@@ -220,6 +249,19 @@ header h2 {
 			color: #fefeff;
 		}
 	}
+	.project::before {
+		content: "";
+		position: absolute;
+		height: 110%;
+		width: 100%;
+		top: -3px;
+		background: #fefeff;
+		transition: width 1s ease-out;
+		transition-delay: 0.85s;
+	}
+	.project.is-inview::before {
+		width: 0;
+	}
 }
 
 footer {
@@ -229,6 +271,12 @@ footer {
 		font-size: calc(1rem + 2vw);
 		margin: 25px 0;
 		text-align: center;
+	}
+	#foot2 {
+		transition-delay: 1.2s;
+	}
+	#foot3 {
+		transition-delay: 1.6s;
 	}
 	a {
 		font-family: "font-bold", sans-serif;

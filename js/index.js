@@ -5,6 +5,7 @@ const scroll = new LocomotiveScroll({
 	smartphone: { smooth: true },
 });
 
+// Body color
 scroll.on("scroll", () => {
 	if (document.querySelector("#color.is-inview")) {
 		document.body.style.background = "#000101";
