@@ -203,6 +203,12 @@ header h2 {
 .portfolio {
 	margin: 200px 0;
 
+	h2 {
+		margin-bottom: 50px;
+	}
+	h3 {
+		font-size: calc(0.7rem + 2vw);
+	}
 	.projects_container {
 		margin-top: 100px;
 	}
@@ -223,6 +229,9 @@ header h2 {
 		&:hover .project_infos {
 			opacity: 1;
 			transform: translate(0, -50%);
+		}
+		.descr_LaPanthere {
+			font-size: calc(0.7rem + 1vw);
 		}
 	}
 
@@ -265,7 +274,7 @@ header h2 {
 }
 
 footer {
-	margin: 150px 0 120px 0;
+	margin: 80px 0 120px 0;
 
 	p {
 		font-size: calc(1rem + 2vw);
@@ -278,13 +287,17 @@ footer {
 	#foot3 {
 		transition-delay: 1.6s;
 	}
+
+	#foot4 {
+		transition-delay: 1.8s;
+	}
 	a {
 		font-family: "font-bold", sans-serif;
 		color: #000101;
 		font-size: calc(1rem + 2vw);
 	}
 	.img2 {
-		background: url(../assets/img/img1.jpg) center/cover;
+		background: url(../assets/img/animation-contact.gif) center/cover;
 	}
 }
 

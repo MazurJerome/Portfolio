@@ -230,6 +230,12 @@ header h2 {
 .portfolio {
   margin: 200px 0;
 }
+.portfolio h2 {
+  margin-bottom: 50px;
+}
+.portfolio h3 {
+  font-size: calc(0.7rem + 2vw);
+}
 .portfolio .projects_container {
   margin-top: 100px;
 }
@@ -249,6 +255,9 @@ header h2 {
 .portfolio .project:hover .project_infos {
   opacity: 1;
   transform: translate(0, -50%);
+}
+.portfolio .project .descr_LaPanthere {
+  font-size: calc(0.7rem + 1vw);
 }
 .portfolio #p2 {
   margin: 0 6vh 0 auto;
@@ -287,7 +296,7 @@ header h2 {
 }
 
 footer {
-  margin: 150px 0 120px 0;
+  margin: 80px 0 120px 0;
 }
 footer p {
   font-size: calc(1rem + 2vw);
@@ -300,13 +309,16 @@ footer #foot2 {
 footer #foot3 {
   transition-delay: 1.6s;
 }
+footer #foot4 {
+  transition-delay: 1.8s;
+}
 footer a {
   font-family: "font-bold", sans-serif;
   color: #000101;
   font-size: calc(1rem + 2vw);
 }
 footer .img2 {
-  background: url(../assets/img/img1.jpg) center/cover;
+  background: url(../assets/img/animation-contact.gif) center/cover;
 }
 
 /*
