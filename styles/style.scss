@@ -291,6 +291,15 @@ footer {
 	#foot4 {
 		transition-delay: 1.8s;
 	}
+	.link_Sociaux {
+		font-family: "font-bold", sans-serif;
+		color: #000101;
+		font-size: calc(1rem + 2vw);
+	}
+	.link_Sociaux:hover {
+		transform: scale(1.04);
+		color: rgb(217, 217, 217);
+	}
 	a {
 		font-family: "font-bold", sans-serif;
 		color: #000101;
